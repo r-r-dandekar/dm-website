@@ -1,0 +1,15 @@
+.dark-soup-bg {
+    background-image: url('background-soup.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+  .contact-bg {
+    background-image: url('background-contact.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+  .about-bg {
+    background-image: url('background-about.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
