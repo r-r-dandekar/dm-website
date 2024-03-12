@@ -1,15 +1,48 @@
-.dark-soup-bg {
-    background-image: url('background-soup.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-  }
-  .contact-bg {
-    background-image: url('background-contact.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-  }
-  .about-bg {
-    background-image: url('background-about.png'); 
-    background-size: cover; 
-    background-repeat: no-repeat;
-  }
+body {
+  background-color: black;	
+}
+.dark-soup-bg-1 {
+	background-image: url('background-index-1.jpg'); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	box-shadow: 0px 10px black;
+
+	height: 1200px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.dark-soup-bg-2 {
+	background-image: url('background-index-2.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	opacity: 0%;
+
+	height: 2200px;
+	width: 100%;
+	position: absolute;
+	top: 200px;
+	left: 0;
+}
+.menu-btn {
+	width: 500;
+	position: absolute;
+	top: 900px;
+	left: 0;
+	right: 0;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-bottom: 200; 
+}
+.contact-bg {
+	background-image: url('background-contact.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
+.about-bg {
+	background-image: url('background-about.png'); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+}

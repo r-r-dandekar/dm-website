@@ -8,16 +8,22 @@ var contact_phone = 'Phone Number: 9673xxxxxxx';
 var contact_address = 'Address: Some place.';
 var contact_speed = 50; /* The speed/duration of the effect in milliseconds */
 
+var i = 0;
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function indexAnimate() {
+	dontWorry();
+}
 function dontWorry() {
-  if (typeanimation_i < typeanimation_text.length) {
-    document.getElementById("dontworry").innerHTML += typeanimation_text.charAt(typeanimation_i);
-    typeanimation_i++;
-    setTimeout(dontWorry, typeanimation_speed);
+  if (i < typeanimation_text.length) {
+	document.getElementById("dontworry").innerHTML += typeanimation_text.charAt(i);
+	i++;
+	setTimeout(dontWorry, speed);
   }
   else {
-    typeanimation_text = "We've got the soup for you.";
-    typeanimation_i = 0;
-    setTimeout(soupForYou, 500)
+	typeanimation_text = "We've got the soup for you.";
+	i = 0;
+	setTimeout(soupForYou, 500)
   }
 }
 function soupForYou() {
@@ -38,4 +44,21 @@ function contactInfo() {
     contact_i++;
     setTimeout(contactInfo, contact_speed);
   }
+}
+
+function indexScroll() {
+	var index_bg_2 = document.getElementById("index-bg-2");
+	window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    if (scroll > 100 && scroll < 600)
+		index_bg_2.style.opacity = (scroll-100)/500;
+	else if (scroll > 600 && scroll < 1200)
+		index_bg_2.style.opacity = 1;
+	else if (scroll > 1200 && scroll < 1500)
+		index_bg_2.style.opacity = (1500-scroll)/300;
+	else if (scroll > 1500)
+		index_bg_2.style.opacity = 0;
+	else if (scroll < 200)
+		index_bg_2.style.opacity = 0;
+	});
 }
